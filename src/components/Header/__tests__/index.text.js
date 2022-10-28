@@ -6,4 +6,20 @@ import Header from "..";
 
 afterEach(cleanup)
 
-describe("Header component")
+describe("Header component", () => {
+    it("renders", () => {
+        render(<Header/>)
+    })
+
+    it("matches snapshot", () => {
+        const { asFragment } = render(<Header />)
+        expect(asFragment()).toMatchSnapshot()
+    })
+})
+
+
+it("links are visible", () => {
+    render(<Header />)
+
+    expect(screen.getByTestId("header")).toHaveTextContent("Mateus Valdejao")
+})
