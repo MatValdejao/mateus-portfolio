@@ -4,26 +4,29 @@ import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
+import ContactForm from './components/Contact';
+import { useState } from 'react';
 
 function App() {
-  const [setProjectsSelected, projectsSelected] = useState(false)
   const [setContactSelected, contactSelected] = useState(false)
+  const [setPortfolioSelected, portfolioSelected] = useState(false)
 
   return (
 		<>
 			<Header></Header>
-			<Nav
-				setProjectsSelected={setProjectsSelected}
-				projectsSelected={projectsSelected}
-				contactSelected={contactSelected}
-				setContactSelected={setContactSelected}
-			></Nav>
-			<div>
-				<About></About>
-				{projectsSelected && <Portfolio></Portfolio>}
-			</div>
-			<Footer />
-		</>
+      <Nav
+        setContactSelected={setContactSelected}
+        contactSelected={contactSelected}
+        setPortfolioSelected={setPortfolioSelected}
+        portfolioSelected={portfolioSelected}
+      ></Nav>
+      <div>
+        <About></About>
+        <Portfolio></Portfolio>
+        {contactSelected && <ContactForm></ContactForm>}
+      </div>
+      <Footer/>
+    </>
 	);
 }
 
