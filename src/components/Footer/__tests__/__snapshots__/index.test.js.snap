@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer component matches snapshot 1`] = `
+<DocumentFragment>
+  <footer>
+    <address
+      class="flex-row"
+    >
+      <div
+        class="mx-2"
+      >
+        <a
+          data-testid="github"
+          href="https://github.com/MatValdejao"
+          rel="noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </div>
+      <div
+        class="mx-2"
+      >
+        <a
+          data-testid="linkedin"
+          href="https://www.linkedin.com/in/mateusvaldejao/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </div>
+      <div
+        class="mx-2"
+      >
+        <a
+          data-testid="instagram"
+          href="https://www.instagram.com/mateusvaldejao/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Instagram
+        </a>
+      </div>
+    </address>
+  </footer>
+</DocumentFragment>
+`;
