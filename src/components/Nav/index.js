@@ -2,8 +2,8 @@ import React from "react";
 
 function Nav(props) {
 	const {
-		setProjectsSelected,
-		projectsSelected,
+		setPortfolioSelected,
+		portfolioSelected,
 		setContactSelected,
 		contactSelected,
 	} = props;
@@ -17,20 +17,21 @@ function Nav(props) {
                         href="#about"
                         className="link"
                         onClick={() => {
-                            setProjectsSelected(false)
+                            setPortfolioSelected(false)
                             setContactSelected(false)
                         }}
 					>
 						About Me
 					</a>
 				</li>
-				<li className={`mx-2 ${projectsSelected}`}>
+				<li className={`mx-2 ${portfolioSelected}`}>
 					<a
                         data-testid="portfolio"
                         href="#portfolio"
                         className="link"
                         onClick={() => {
-                            setContactSelected(false) && setProjectsSelected(true)
+							setContactSelected(false)
+							setPortfolioSelected(true)
                         }}
 					>
 						Portfolio
@@ -39,10 +40,11 @@ function Nav(props) {
 				<li className={`mx-2 ${contactSelected}`}>
 					<a
                         data-testid="contact"
-                        href="#contact"
+                        href="#contact-form"
                         className="link"
                         onClick={() => {
-                            setProjectsSelected(false) && setContactSelected(true)
+							setContactSelected(true)
+							setPortfolioSelected(false)
                         }}
 					>
 						Contact
