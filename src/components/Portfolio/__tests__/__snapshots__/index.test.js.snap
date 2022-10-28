@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Portfolio component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <h1
+      data-testid="h1tag"
+    >
+      Projects
+    </h1>
+    <div
+      class="flex-row"
+    >
+      <a
+        data-testid="Movie Mate"
+        href="https://matvaldejao.github.io/movie-mate/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Movie Mate
+        <br />
+        <img
+          alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
+          class="img-thumbnail mx-1"
+          src="Movie Mate.png"
+        />
+      </a>
+      <a
+        data-testid="Gift Pilot"
+        href="https://gift-pilot.herokuapp.com/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Gift Pilot
+        <br />
+        <img
+          alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
+          class="img-thumbnail mx-1"
+          src="Gift Pilot.png"
+        />
+      </a>
+      <a
+        data-testid="Horiseon"
+        href="https://matvaldejao.github.io/Refactoring-Horiseon-Website/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Horiseon
+        <br />
+        <img
+          alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
+          class="img-thumbnail mx-1"
+          src="Horiseon.png"
+        />
+      </a>
+      <a
+        data-testid="Run Buddy"
+        href="https://matvaldejao.github.io/run-buddy/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Run Buddy
+        <br />
+        <img
+          alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
+          class="img-thumbnail mx-1"
+          src="Run Buddy.png"
+        />
+      </a>
+      <a
+        data-testid="Robot Gladiators"
+        href="https://matvaldejao.github.io/robot-gladiators/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        Robot Gladiators
+        <br />
+        <img
+          alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
+          class="img-thumbnail mx-1"
+          src="Robot Gladiators.png"
+        />
+      </a>
+    </div>
+  </section>
+</DocumentFragment>
+`;
