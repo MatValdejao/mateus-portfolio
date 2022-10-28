@@ -17,6 +17,10 @@ main {
 
 }
 
+body {
+  height: 100%;
+}
+
 li{
   list-style: none;
 }
@@ -40,11 +44,26 @@ img {
   margin-left: var(--spacing-two);
 }
 
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+
 .img-thumbnail {
   width: auto;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
+}
+
+.footer {
+  justify-content: center;
+  height: 50px;
+}
+
+.link-image  {
+  width: 30px;
+  height: 30px;
 }
 
 code {

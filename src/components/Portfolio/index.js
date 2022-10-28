@@ -5,7 +5,7 @@ function Portfolio() {
 
 	return (
 		<section>
-			<h1 data-testid="h1tag">Projects</h1>
+			<h1 id="portfolio" data-testid="h1tag">Projects</h1>
 			<ProjectList></ProjectList>
 		</section>
 	);

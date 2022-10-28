@@ -1,19 +1,20 @@
-import './App.css';
+import React, {useState} from 'react';
 import Nav from './components/Nav';
 import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
-import { useState } from 'react';
 
 function App() {
-  const [setContactSelected, contactSelected] = useState(false)
-  const [setPortfolioSelected, portfolioSelected] = useState(false)
+  // set States
+  const [contactSelected, setContactSelected ] = useState(false)
+  const [portfolioSelected, setPortfolioSelected] = useState(false)
 
   return (
 		<>
-			<Header></Header>
+      <Header></Header>
+      {/* feed props to Nav */}
       <Nav
         setContactSelected={setContactSelected}
         contactSelected={contactSelected}
@@ -21,9 +22,8 @@ function App() {
         portfolioSelected={portfolioSelected}
       ></Nav>
       <div>
-        <About></About>
-        <Portfolio></Portfolio>
-        {contactSelected && <ContactForm></ContactForm>}
+        {/* conditionally rendering components */}
+        {contactSelected ? <ContactForm></ContactForm> : portfolioSelected ? <Portfolio></Portfolio> : <About></About>}
       </div>
       <Footer/>
     </>
