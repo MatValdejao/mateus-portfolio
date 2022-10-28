@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function ProjectList() {
 	const [projects] = useState([
@@ -42,21 +43,23 @@ function ProjectList() {
 	return (
 		<div className="flex-row">
 			{projects.map((project, i) => (
-				<a
-					data-testid={project.name}
-					rel="noreferrer"
-					href={project.link}
-					target="_blank"
-					key={project.name}
-				>
-					{project.name}
-					<br />
-					<img
-						className="img-thumbnail mx-1"
-						src={require(`../../assets/images/${project.name}.png`)}
-						alt={project.description}
-					/>
-				</a>
+				<>
+					<a
+						data-testid={project.name}
+						rel="noreferrer"
+						href={project.link}
+						target="_blank"
+						key={project.name}
+						className="project-link"
+					>
+						<h2>{capitalizeFirstLetter(project.name)}</h2>
+						<img
+							className="img-thumbnail mx-1"
+							src={require(`../../assets/images/${project.name}.png`)}
+							alt={project.description}
+						/>
+					</a>
+				</>
 			))}
 		</div>
 	);

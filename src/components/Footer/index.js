@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
 	return (
 		<footer>
-			<address className="flex-row">
+			<address className="flex-row footer">
 				<div className="mx-2">
 					<a
 						data-testid="github"
@@ -11,7 +11,7 @@ function Footer() {
 						href="https://github.com/MatValdejao"
 						target="_blank"
 					>
-						GitHub
+						<img className="link-image "alt="GitHub" src={require("../../assets/images/github.png")} />
 					</a>
 				</div>
 				<div className="mx-2">
@@ -21,7 +21,11 @@ function Footer() {
 						href="https://www.linkedin.com/in/mateusvaldejao/"
 						target="_blank"
 					>
-						LinkedIn
+						<img
+							className="link-image"
+							alt="LinkedIn"
+							src={require("../../assets/images/linkedin.png")}
+						/>
 					</a>
 				</div>
 				<div className="mx-2">
@@ -31,7 +35,7 @@ function Footer() {
 						href="https://www.instagram.com/mateusvaldejao/"
 						target="_blank"
 					>
-						Instagram
+						<img className="link-image" alt="Instagram" src={require("../../assets/images/Instagram.png")} />
 					</a>
 				</div>
 			</address>
