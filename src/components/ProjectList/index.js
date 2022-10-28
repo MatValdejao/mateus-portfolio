@@ -42,14 +42,20 @@ function ProjectList() {
 	return (
 		<div className="flex-row">
 			{projects.map((project, i) => (
-				<a rel="noreferrer" href={project.link} target="_blank">
-                    {project.name}
-                    <br/>
-                    <img
-					className="img-thumbnail mx-1"
-					src={require(`../../assets/images/${project.name}.png`)}
-					alt={project.description}
-					key={project.name} />
+				<a
+					data-testid={project.name}
+					rel="noreferrer"
+					href={project.link}
+					target="_blank"
+					key={project.name}
+				>
+					{project.name}
+					<br />
+					<img
+						className="img-thumbnail mx-1"
+						src={require(`../../assets/images/${project.name}.png`)}
+						alt={project.description}
+					/>
 				</a>
 			))}
 		</div>
