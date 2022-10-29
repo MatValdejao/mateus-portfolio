@@ -7,6 +7,7 @@ function About() {
 				<h2 className="section-title">About Me</h2>
 			</div>
 			<div>
+				<img alt="Portrait of me" src={require("../../assets/images/foto.png")} className="portrait" />
 				<p>
 					My name is Mateus Valdejão. I sm currently a student, at the Junior
 					level, at the University of North Carolina at Chapel Hill. There, I

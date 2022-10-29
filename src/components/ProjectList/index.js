@@ -6,37 +6,32 @@ function ProjectList() {
 		{
 			name: "Movie Mate",
 			link: "https://matvaldejao.github.io/movie-mate/",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
 			github: "https://github.com/MatValdejao/movie-mate",
 		},
 		{
 			name: "Gift Pilot",
 			link: "https://gift-pilot.herokuapp.com/",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
 			github: "https://github.com/MatValdejao/gift-pilot",
 		},
 		{
 			name: "Horiseon",
 			link: "https://matvaldejao.github.io/Refactoring-Horiseon-Website/",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
 			github: "https://github.com/MatValdejao/Refactoring-Horiseon-Website",
 		},
 		{
 			name: "Run Buddy",
 			link: "https://matvaldejao.github.io/run-buddy/",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
 			github: "https://github.com/MatValdejao/run-buddy",
 		},
 		{
 			name: "Robot Gladiators",
 			link: "https://matvaldejao.github.io/robot-gladiators/",
-			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
 			github: "https://github.com/MatValdejao/robot-gladiators",
+		},
+		{
+			name: "Photo Port",
+			link: "https://matvaldejao.github.io/photo-port/",
+			github: "https://github.com/MatValdejao/photo-port",
 		},
 	]);
 
@@ -55,7 +50,7 @@ function ProjectList() {
 						<img
 							className="img-thumbnail mx-1"
 							src={require(`../../assets/images/${project.name}.png`)}
-							alt={project.description}
+							alt={project.name}
 						/>
 					</a>
 					<br />
