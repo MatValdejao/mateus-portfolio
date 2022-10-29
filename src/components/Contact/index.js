@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Form, Button } from "react-bootstrap";
 import { validateEmail } from "../../utils/helpers";
 
 function ContactForm() {
@@ -43,46 +44,46 @@ function ContactForm() {
 	}
 
 	return (
-		<section>
-			<h1 data-testid="h1tag">Contact me</h1>
-			<form id="contact-form" onSubmit={handleSubmit}>
-				<div>
-					<label htmlFor="name">Name:</label>
-					<input
-						type="text"
+		<>
+			<section>
+				<h1 class="section-title" id="portfolio" data-testid="h1tag">
+					Contact
+				</h1>
+			</section>
+			<Form id="contact-form" onSubmit={handleSubmit}>
+				<Form.Group controlId="formBasicName">
+					<Form.Label>Name:</Form.Label>
+					<Form.Control
+						type="input"
 						name="name"
 						defaultValue={name}
 						onBlur={handleChange}
 					/>
-				</div>
-				<div>
-					<label htmlFor="email">Email:</label>
-					<input
+				</Form.Group>
+				<Form.Group controlId="formBasicEmail">
+					<Form.Label>Email:</Form.Label>
+					<Form.Control
 						type="email"
 						name="email"
+						placeholder="name@example.com"
 						defaultValue={email}
 						onBlur={handleChange}
 					/>
-				</div>
-				<div>
-					<label htmlFor="message">Message:</label>
-					<textarea
-						type="message"
-						rows="5"
+				</Form.Group>
+				<Form.Group controlId="formBasicMessage">
+					<Form.Label>Message:</Form.Label>
+					<Form.Control
+						as="textarea"
+						name="message"
 						defaultValue={message}
 						onBlur={handleChange}
 					/>
-				</div>
-				{errorMessage && (
-					<div>
-						<p className="error-text">{errorMessage}</p>
-					</div>
-				)}
-				<button type="submit" data-testid="button">
-					Submit:
-				</button>
-			</form>
-		</section>
+				</Form.Group>
+				<Button variant="primary" type="submit">
+					Submit
+				</Button>
+			</Form>
+		</>
 	);
 }
 

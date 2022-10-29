@@ -4,7 +4,7 @@ function Header() {
 	return (
 		<header>
 			<h1>
-				<a data-testid="header" href="/ ">
+				<a className="link page-name" data-testid="header" href="/ ">
 					Mateus Valdejao
 				</a>
 			</h1>

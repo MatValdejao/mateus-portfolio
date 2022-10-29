@@ -11,7 +11,7 @@ function Nav(props) {
 	return (
 		<nav>
 			<ul className="flex-row">
-				<li className="mx-2">
+				<li className="mx-2-right">
 					<a
                         data-testid="about"
                         href="#about"
@@ -24,7 +24,7 @@ function Nav(props) {
 						About Me
 					</a>
 				</li>
-				<li className={`mx-2 ${portfolioSelected}`}>
+				<li className={`mx-2-right ${portfolioSelected}`}>
 					<a
                         data-testid="portfolio"
                         href="#portfolio"
@@ -37,7 +37,7 @@ function Nav(props) {
 						Portfolio
 					</a>
 				</li>
-				<li className={`mx-2 ${contactSelected}`}>
+				<li className={`mx-2-right ${contactSelected}`}>
 					<a
                         data-testid="contact"
                         href="#contact-form"

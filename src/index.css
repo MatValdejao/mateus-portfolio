@@ -1,72 +1,105 @@
-main {
-	margin: 0 auto;
-	max-width: 90%;
-  padding: 50px 30px;
-}
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
-  --error: rgb(228, 46, 1);
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
-
+	--primary: #8c54ff;
+	--secondary: #f3a847;
+	--tertiary: #b12704;
+	--light: #fafafa;
+	--dark: #000000;
+	--darker: #111111;
+	--error: rgb(228, 46, 1);
+	--spacing-one: calc(1rem * 0.5);
+	--spacing-two: calc(1rem);
+	--spacing-five: calc(2.5rem);
+  --text: #1B2845
 }
 
 body {
-  height: 100%;
+  color: var(--text);
+	height: 100%;
+  background-color: #65AFFF;
+  font-family: 'Roboto', sans-serif;
 }
 
-li{
-  list-style: none;
+nav {
+  font-size: 1rem;
+}
+
+li {
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
+}
+
+header {
+  color: var(--light);
+  text-align: center;
+}
+
+ul {
+  justify-content: center;
+}
+
+a {
+  color: var(--text);
+}
+
+.page-name {
+  font-size: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
 }
 
 .flex-row {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
+	margin-right: var(--spacing-one);
+	margin-left: var(--spacing-one);
 }
 
 .mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
+	margin-right: var(--spacing-two);
+	margin-left: var(--spacing-two);
 }
 
-.project-link {
-  text-decoration: none;
-  color: black;
+.mx-2-right {
+  	margin-right: var(--spacing-two);
+}
+
+.projects-list {
+ justify-content: space-between;
 }
 
 .img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
+	width: 50vh;
+	height: 30vh;
+	cursor: pointer;
 }
 
 .footer {
-  justify-content: center;
-  height: 50px;
+	justify-content: center;
+	height: 50px;
 }
 
-.link-image  {
-  width: 30px;
-  height: 30px;
+.link-image {
+	width: 30px;
+	height: 30px;
+  opacity: 1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.link-image:hover {
+  opacity: 0.5;
+}
+
+.github-link {
+  text-align: center;
 }
