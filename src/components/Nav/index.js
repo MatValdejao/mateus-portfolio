@@ -6,6 +6,8 @@ function Nav(props) {
 		portfolioSelected,
 		setContactSelected,
 		contactSelected,
+		setResumeSelected, 
+		resumeSelected
 	} = props;
 
 	return (
@@ -18,7 +20,8 @@ function Nav(props) {
                         className="link"
                         onClick={() => {
                             setPortfolioSelected(false)
-                            setContactSelected(false)
+							setContactSelected(false)
+							setResumeSelected(false)
                         }}
 					>
 						About Me
@@ -32,6 +35,7 @@ function Nav(props) {
                         onClick={() => {
 							setContactSelected(false)
 							setPortfolioSelected(true)
+							setResumeSelected(false)
                         }}
 					>
 						Portfolio
@@ -45,9 +49,24 @@ function Nav(props) {
                         onClick={() => {
 							setContactSelected(true)
 							setPortfolioSelected(false)
+							setResumeSelected(false)
                         }}
 					>
 						Contact
+					</a>
+				</li>
+				<li className={`mx-2-right ${resumeSelected}`}>
+					<a
+                        data-testid="resume"
+						href="#resume"
+                        className="link"
+                        onClick={() => {
+							setContactSelected(false)
+							setPortfolioSelected(false)
+							setResumeSelected(true)
+                        }}
+					>
+						Resume
 					</a>
 				</li>
 			</ul>

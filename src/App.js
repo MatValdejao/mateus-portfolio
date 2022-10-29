@@ -5,12 +5,14 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
 
 	// set States
 	const [contactSelected, setContactSelected] = useState(false);
-	const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [portfolioSelected, setPortfolioSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false)
 
 	return (
 		<>
@@ -20,7 +22,9 @@ function App() {
 				setContactSelected={setContactSelected}
 				contactSelected={contactSelected}
 				setPortfolioSelected={setPortfolioSelected}
-				portfolioSelected={portfolioSelected}
+        portfolioSelected={portfolioSelected}
+        setResumeSelected={setResumeSelected}
+        resumeSelected={resumeSelected}
 			></Nav>
 			<div>
 				{/* conditionally rendering components */}
@@ -28,9 +32,9 @@ function App() {
 						<ContactForm></ContactForm>
 				) : portfolioSelected ? (
 					<Portfolio></Portfolio>
-				) : (
-					<About></About>
-				)}
+				) : resumeSelected ? (
+					<Resume></Resume>
+				) : (<About></About>)}
 			</div>
 			<Footer />
 		</>
