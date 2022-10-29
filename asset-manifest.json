@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mateus-portfolio/static/css/main.8c29ba18.css",
+    "main.js": "/mateus-portfolio/static/js/main.383efc64.js",
+    "static/js/787.684ca70a.chunk.js": "/mateus-portfolio/static/js/787.684ca70a.chunk.js",
+    "static/media/Horiseon.png": "/mateus-portfolio/static/media/Horiseon.4859e23ead2636f554ff.png",
+    "static/media/Run Buddy.png": "/mateus-portfolio/static/media/Run Buddy.3c3346c600b5c3897611.png",
+    "static/media/Movie Mate.png": "/mateus-portfolio/static/media/Movie Mate.ddfa7784e4a9842364ad.png",
+    "static/media/Instagram.png": "/mateus-portfolio/static/media/Instagram.d71e90cd9a9c05b45cef.png",
+    "static/media/Gift Pilot.png": "/mateus-portfolio/static/media/Gift Pilot.350535eeb776856d714b.png",
+    "static/media/Robot Gladiators.png": "/mateus-portfolio/static/media/Robot Gladiators.8fe8eb196bf65e4e08d3.png",
+    "index.html": "/mateus-portfolio/index.html",
+    "main.8c29ba18.css.map": "/mateus-portfolio/static/css/main.8c29ba18.css.map",
+    "main.383efc64.js.map": "/mateus-portfolio/static/js/main.383efc64.js.map",
+    "787.684ca70a.chunk.js.map": "/mateus-portfolio/static/js/787.684ca70a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c29ba18.css",
+    "static/js/main.383efc64.js"
+  ]
+}
