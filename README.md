@@ -1,7 +1,7 @@
 # Mateus Portfolio React
   
   ## Description
-  Basic MVP of a portfolio designed with React
+  Basic MVP of a portfolio designed with React. The app uses basic React components and functionalities in order to render a basic app. I will eventually combine skills into the creation of a really good portfolio.
 
   
 
