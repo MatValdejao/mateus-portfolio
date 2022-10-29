@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mateus-portfolio/static/css/main.1ee29509.css",
-    "main.js": "/mateus-portfolio/static/js/main.0dd5e44a.js",
+    "main.js": "/mateus-portfolio/static/js/main.4ed7719e.js",
     "static/js/787.684ca70a.chunk.js": "/mateus-portfolio/static/js/787.684ca70a.chunk.js",
     "static/media/Horiseon.png": "/mateus-portfolio/static/media/Horiseon.4859e23ead2636f554ff.png",
     "static/media/Photo Port.png": "/mateus-portfolio/static/media/Photo Port.11643a12e0e8b0bd0ab9.png",
@@ -13,11 +13,11 @@
     "static/media/Robot Gladiators.png": "/mateus-portfolio/static/media/Robot Gladiators.8fe8eb196bf65e4e08d3.png",
     "index.html": "/mateus-portfolio/index.html",
     "main.1ee29509.css.map": "/mateus-portfolio/static/css/main.1ee29509.css.map",
-    "main.0dd5e44a.js.map": "/mateus-portfolio/static/js/main.0dd5e44a.js.map",
+    "main.4ed7719e.js.map": "/mateus-portfolio/static/js/main.4ed7719e.js.map",
     "787.684ca70a.chunk.js.map": "/mateus-portfolio/static/js/787.684ca70a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ee29509.css",
-    "static/js/main.0dd5e44a.js"
+    "static/js/main.4ed7719e.js"
   ]
 }
